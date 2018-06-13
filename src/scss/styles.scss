@@ -1,0 +1,76 @@
+// Variable Overrides 
+$secondary:   grey;
+$primary-overlay: rgba(50, 146, 166, 0.8);
+  
+$theme-colors: (
+  "primary": #3292a6
+  );
+
+//Bootstrap sass files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body{
+  margin-top: 105px;
+}
+
+.navbar{
+  box-shadow: 2px 2px 5px $primary;
+  opacity: .95;
+  background: white;
+  
+  .nav-item{
+    font-size: 1.4rem;
+    padding-right: 20px;
+  }
+}
+
+#newsletter{
+  input, submit{
+    margin-right: 12px;
+  }
+}
+
+#showcase{
+  position: relative;
+  background: url("../img/mountains.jpg");
+  min-height: 600px;
+  
+  .primary-overlay{
+    background: $primary-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info-header{
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+#accordion{
+  .fa{
+    margin-right: 6px;
+  }
+}
+
+
+#authors{
+  img{
+    margin-top: -50px;
+  }
+  .fab{
+    font-size: 25px;
+    &:hover{
+      color: white;
+    }
+  }
+   
+  .card:hover{
+    color: white;
+    background: $primary-overlay;
+  }
+}
+
